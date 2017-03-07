@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD573873-C8E6-4EA3-93F5-0D39A92FC9F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interfaces</RootNamespace>
+    <AssemblyName>Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Generated Interfaces\ApplicationEntities.cs" />
+    <Compile Include="Generated Interfaces\ApplicationProcess.cs" />
+    <Compile Include="Generated Interfaces\Applications.cs" />
+    <Compile Include="Generated Interfaces\ApplicationSetting.cs" />
+    <Compile Include="Generated Interfaces\DataProperties.cs" />
+    <Compile Include="Generated Interfaces\DataTypes.cs" />
+    <Compile Include="Generated Interfaces\Entities.cs" />
+    <Compile Include="Generated Interfaces\EntityProperties.cs" />
+    <Compile Include="Generated Interfaces\EntityRelationships.cs" />
+    <Compile Include="Generated Interfaces\EntityView.cs" />
+    <Compile Include="Generated Interfaces\EntityViewEntityProperties.cs" />
+    <Compile Include="Generated Interfaces\EntityViewProperties.cs" />
+    <Compile Include="Generated Interfaces\EntityViewPropertyFunction.cs" />
+    <Compile Include="Generated Interfaces\EntityViewPropertyFunctionParameter.cs" />
+    <Compile Include="Generated Interfaces\EntityViewViewProperties.cs" />
+    <Compile Include="Generated Interfaces\FunctionBody.cs" />
+    <Compile Include="Generated Interfaces\FunctionParameters.cs" />
+    <Compile Include="Generated Interfaces\FunctionReturnType.cs" />
+    <Compile Include="Generated Interfaces\Functions.cs" />
+    <Compile Include="Generated Interfaces\FunctionSetFunctions.cs" />
+    <Compile Include="Generated Interfaces\FunctionSets.cs" />
+    <Compile Include="Generated Interfaces\Layers.cs" />
+    <Compile Include="Generated Interfaces\Layout.cs" />
+    <Compile Include="Generated Interfaces\ModelTypes.cs" />
+    <Compile Include="Generated Interfaces\Operators.cs" />
+    <Compile Include="Generated Interfaces\Parameters.cs" />
+    <Compile Include="Generated Interfaces\Parts.cs" />
+    <Compile Include="Generated Interfaces\PresentationProperties.cs" />
+    <Compile Include="Generated Interfaces\PrimaryKeyOptions.cs" />
+    <Compile Include="Generated Interfaces\Process.cs" />
+    <Compile Include="Generated Interfaces\ProcessSteps.cs" />
+    <Compile Include="Generated Interfaces\ProcessStepScreens.cs" />
+    <Compile Include="Generated Interfaces\Projects.cs" />
+    <Compile Include="Generated Interfaces\RelationshipTypes.cs" />
+    <Compile Include="Generated Interfaces\ScreenLayouts.cs" />
+    <Compile Include="Generated Interfaces\ScreenParts.cs" />
+    <Compile Include="Generated Interfaces\Screens.cs" />
+    <Compile Include="Generated Interfaces\ScreenViews.cs" />
+    <Compile Include="Generated Interfaces\Settings.cs" />
+    <Compile Include="Generated Interfaces\SettingsNames.cs" />
+    <Compile Include="Generated Interfaces\StateMachines.cs" />
+    <Compile Include="Generated Interfaces\StateMachineStates.cs" />
+    <Compile Include="Generated Interfaces\StateMachineTriggers.cs" />
+    <Compile Include="Generated Interfaces\States.cs" />
+    <Compile Include="Generated Interfaces\Steps.cs" />
+    <Compile Include="Generated Interfaces\TestValues.cs" />
+    <Compile Include="Generated Interfaces\Triggers.cs" />
+    <Compile Include="Generated Interfaces\ViewEntity.cs" />
+    <Compile Include="Generated Interfaces\Views.cs" />
+    <Compile Include="IPersons.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Revolution\SystemInterfaces\SystemInterfaces.csproj">
+      <Project>{e3842263-e081-49ba-a1b4-bbe82b24e2db}</Project>
+      <Name>SystemInterfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

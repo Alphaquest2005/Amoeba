@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+       
+        <ResourceDictionary Source="Custom/HeaderVDT.xaml" />
+        <ResourceDictionary Source="Custom/FooterVDT.xaml" />
+        <ResourceDictionary Source="Custom/ScreenDT.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
